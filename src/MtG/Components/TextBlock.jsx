@@ -8,8 +8,8 @@ class TextBlock extends React.Component {
   render() {
     return (
       <div class="card-text">
-        <div class="mtg-text">{this.props.Text}</div>
-        <div class="mtg-ftext font-italic">{this.props.FlavorText}</div>
+        <div class="mtg-text">{this.props.text}</div>
+        <div class="mtg-ftext font-italic">{this.props.flavorText}</div>
       </div>
     )
   }

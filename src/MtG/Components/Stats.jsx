@@ -6,11 +6,11 @@ class Stats extends React.Component {
   }
 
   render() {
-    if (typeof this.props.Toughness !== 'undefined' && this.props.Toughness > 0) {
+    if (typeof this.props.toughness !== 'undefined' && this.props.toughness > 0) {
       return (
         <div class="mtg-pt float-right">
-          <i class="far fa-heart"> {this.props.Power} </i>
-          <i class="fas fa-shield-alt"> {this.props.Toughness} </i>
+          <i class="far fa-heart"> {this.props.power} </i>
+          <i class="fas fa-shield-alt"> {this.props.toughness} </i>
         </div>
       )
     }

@@ -1,21 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Bootstrap from 'bootstrap';
 import './index.css';
 import './MtG/CSS/Card.css'
-import Card from './MtG/Components/Card.es6';
-import Cards from './MtG/Components/Cards.es6';
+import Card from './MtG/Components/Card.jsx';
+import TitleRow from './MtG/Components/TitleRow.jsx';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   // <Cards />
-  <Card Title="A card"
-    Black={1} Blue={0} Colorless={0} Converted={1} Green={0} Red={0} White={0}
-    Type="Main Type" Subtype="Subtype" ExpansionName="Expansion"
-    Text="Test (This card is a test card.)" FlavorText="This is some lore about the Test Card."
-    CardNumber="1" ExpansionCount="100" Copyright="2019"
-    Abbreviation="EXP" Rarity="Rare" Artist="Jason Conner"
-    Power={5} Toughness={5} />
+  <Card title="A card"
+    black="1" blue="0" colorless="0" converted="1" green="0" red="0" white="0"
+    type="Main Type" subtype="Subtype" expansionName="Expansion"
+    text="Test (This card is a test card.)" flavorText="This is some lore about the Test Card."
+    cardNumber="1" expansionCount="100" copyright="2019"
+    abbreviation="EXP" rarity="Rare" artist="Jason Conner"
+    power="5" toughness="5" />
   , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

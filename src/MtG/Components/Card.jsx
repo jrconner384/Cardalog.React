@@ -7,15 +7,19 @@ import FooterRow from './FooterRow.jsx';
 class Card extends React.Component {
   constructor(props) {
     super(props);
+    this.card = this.props.card;
+    this.expansion = this.card.Expansion;
+    this.cost = this.card.Cost;
   }
+
 
   render() {
     return (
       <div class="card mtg-card col">
-        <TitleRow title={this.props.title} black={this.props.black} blue={this.props.blue} colorless={this.props.colorless} converted={this.props.converted} green={this.props.green} red={this.props.red} white={this.props.white} />
-        <TypeRow type={this.props.type} subtype={this.props.subtype} expansionName={this.props.expansionName} />
-        <TextBlock text={this.props.text} flavorText={this.props.flavorText} />
-        <FooterRow cardNumber={this.props.cardNumber} expansionCount={this.props.expansionCount} copyright={this.props.copyright} abbreviation={this.props.abbreviation} rarity={this.props.rarity} artist={this.props.artist} toughness={this.props.toughness} power={this.props.power} />
+        <TitleRow title={this.card.Title} cost={this.card.Cost} />
+        <TypeRow type={this.card.Type} subtype={this.card.Subtype} expansionName={this.expansion.Name} />
+        <TextBlock text={this.card.Text} flavorText={this.card.FlavorText} />
+        <FooterRow expansion={this.card.Expansion} cardNumber={this.card.CardNumber} rarity={this.card.Rarity} artist={this.card.Artist} toughness={this.card.Toughness} power={this.card.Power} />
       </div>
     )
   }

@@ -6,7 +6,7 @@ class TypeRow extends React.Component {
   }
 
   render() {
-    if (typeof this.props.subtype === 'undefined' || this.props.subtype == null) {
+    if (typeof this.props.subtype === 'undefined' || this.props.subtype == null || this.props.subtype == "") {
       return (
         <div class="card-subtitle mb-2 text-muted mtg-type-row border-top border-bottom">
           <div class="mtg-type float-left">{this.props.type}</div>

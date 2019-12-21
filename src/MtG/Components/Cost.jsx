@@ -3,13 +3,16 @@ import React from 'react';
 class Cost extends React.Component {
   constructor(props) {
     super(props);
+    this.cost = this.props.cost;
   }
 
   render() {
-    if (this.props.converted > 0) {
-      return <div class="mtg-cost float-right">{this.props.black} {this.props.blue} {this.props.colorless} {this.props.green} {this.props.red} {this.props.white}</div>
+    if (typeof this.cost.Converted === 'undefined' || isNaN(this.cost.Converted) || this.cost.Converted == 0) {
+      return <div class="mtg-cost float-right"></div>
     }
-    return;
+    else {
+      return <div class="mtg-cost float-right">{this.cost.Black} {this.cost.Blue} {this.cost.Colorless} {this.cost.Green} {this.cost.Red} {this.cost.White}</div>
+    }
   }
 }
 

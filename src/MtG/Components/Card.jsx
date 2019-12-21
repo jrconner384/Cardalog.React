@@ -15,7 +15,7 @@ class Card extends React.Component {
 
   render() {
     return (
-      <div class="card mtg-card col">
+      <div className="card mtg-card col">
         <TitleRow title={this.card.Title} cost={this.card.Cost} />
         <TypeRow type={this.card.Type} subtype={this.card.Subtype} expansionName={this.expansion.Name} />
         <TextBlock text={this.card.Text} flavorText={this.card.FlavorText} />

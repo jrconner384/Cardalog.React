@@ -6,19 +6,19 @@ class TypeRow extends React.Component {
   }
 
   render() {
-    if (typeof this.props.subtype === 'undefined' || this.props.subtype == null || this.props.subtype == "") {
+    if (typeof this.props.subtype === 'undefined' || this.props.subtype == null || this.props.subtype === "") {
       return (
-        <div class="card-subtitle mb-2 text-muted mtg-type-row border-top border-bottom">
-          <div class="mtg-type float-left">{this.props.type}</div>
-          <div class="mtg-expansion float-right">{this.props.expansionName}</div>
+        <div className="card-subtitle mb-2 text-muted mtg-type-row border-top border-bottom">
+          <div className="mtg-type float-left">{this.props.type}</div>
+          <div className="mtg-expansion float-right">{this.props.expansionName}</div>
         </div>
       )
     }
     else {
       return (
-        <div class="card-subtitle mb-2 text-muted mtg-type-row border-top border-bottom">
-          <div class="mtg-type float-left">{this.props.type} - {this.props.subtype}</div>
-          <div class="mtg-expansion float-right">{this.props.expansionName}</div>
+        <div className="card-subtitle mb-2 text-muted mtg-type-row border-top border-bottom">
+          <div className="mtg-type float-left">{this.props.type} - {this.props.subtype}</div>
+          <div className="mtg-expansion float-right">{this.props.expansionName}</div>
         </div>
       )
     }

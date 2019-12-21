@@ -10,7 +10,7 @@ class FooterRow extends React.Component {
 
   render() {
     return (
-      <div class="card-footer mtg-footer w-100">
+      <div className="card-footer mtg-footer w-100">
         <Miscellany cardNumber={this.props.cardNumber} expansionCount={this.expansion.TotalCards} copyright={this.expansion.Copyright} abbreviation={this.expansion.Abbreviation} rarity={this.props.rarity} artist={this.props.artist} />
         <Stats toughness={this.props.toughness} power={this.props.power} />
       </div>

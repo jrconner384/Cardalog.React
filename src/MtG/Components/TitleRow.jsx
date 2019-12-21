@@ -9,8 +9,8 @@ class TitleRow extends React.Component {
 
   render() {
     return (
-      <div class="card-body mtg-title-row">
-        <div class="card-title float-left mtg-title align-bottom">{this.props.title}</div>
+      <div className="card-body mtg-title-row">
+        <div className="card-title float-left mtg-title align-bottom">{this.props.title}</div>
         <Cost cost={this.cost} />
       </div>
     )

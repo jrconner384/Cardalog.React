@@ -1,7 +1,9 @@
+import './assets/css/material-kit.min.css';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import './MtG/CSS/Card.css'
+import './assets/css/Card.css'
 import Cards from './MtG/Components/Cards.jsx';
 import * as serviceWorker from './serviceWorker';
 

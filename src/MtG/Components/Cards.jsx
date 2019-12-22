@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card.jsx';
+import DisplayCard from '../../components/MtG/DisplayCard.jsx';
 import axios from 'axios';
 
 class Cards extends React.Component {
@@ -24,7 +24,7 @@ class Cards extends React.Component {
 
   render() {
     const cards = this.state.cards.map((card, i) => (
-      <Card card={card} key={card.Title.concat(i)} />
+      <DisplayCard card={card} key={card.Title.concat(i)} />
     ));
 
     return (

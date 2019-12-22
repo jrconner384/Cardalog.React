@@ -1,24 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
+import Menu from './Navigation/Components/Menu.jsx';
+//import Cards from './MtG/Components/Cards.jsx';
+import Cards from './components/MtG/Cards.jsx';
 import './App.css';
+import './MtG/CSS/Card.css';
+import './Navigation/CSS/Menu.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Jason edited <code>src/App.js</code> like he was told.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="d-flex flex-row">
+      <div id="cardalog-menu" className="d-flex flex-column justify-content-start"><Menu /></div>
+      <div className="d-flex flex-column"><Cards /></div>
     </div>
   );
 }

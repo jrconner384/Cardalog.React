@@ -28,7 +28,7 @@ class Cards extends React.Component {
     ));
 
     return (
-      <div className="container row">
+      <div id="cards-view" className="row">
         {cards}
       </div>
     );

@@ -12,7 +12,6 @@ class Card extends React.Component {
     this.cost = this.card.Cost;
   }
 
-
   render() {
     return (
       <div className="card mtg-card col">

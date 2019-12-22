@@ -4,11 +4,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './assets/css/Card.css'
-import Cards from './MtG/Components/Cards.jsx';
+import AppContainer from './components/AppContainer.jsx';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <Cards />
+  <AppContainer />
   , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

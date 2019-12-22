@@ -1,5 +1,5 @@
 import React from 'react';
-import DisplayCard from '../../components/MtG/DisplayCard.jsx';
+import DisplayCard from './DisplayCard.jsx';
 import axios from 'axios';
 
 class Cards extends React.Component {

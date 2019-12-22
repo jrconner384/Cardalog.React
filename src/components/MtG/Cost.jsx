@@ -8,10 +8,10 @@ class Cost extends React.Component {
 
   render() {
     if (typeof this.cost.Converted === 'undefined' || isNaN(this.cost.Converted) || this.cost.Converted === 0) {
-      return <div className="mtg-cost float-right"></div>
+      return <div className="card-subtitle float-right mtg-cost"></div>
     }
     else {
-      return <div className="mtg-cost float-right">{this.cost.Black} {this.cost.Blue} {this.cost.Colorless} {this.cost.Green} {this.cost.Red} {this.cost.White}</div>
+      return <div className="card-subtitle float-right mtg-cost">{this.cost.Black} {this.cost.Blue} {this.cost.Colorless} {this.cost.Green} {this.cost.Red} {this.cost.White}</div>
     }
   }
 }

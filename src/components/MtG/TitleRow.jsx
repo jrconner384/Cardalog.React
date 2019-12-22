@@ -4,13 +4,14 @@ import Cost from './Cost.jsx';
 class TitleRow extends React.Component {
   constructor(props) {
     super(props);
-    this.cost = this.props.cost;
+    this.card = this.props.card;
+    this.cost = this.card.Cost;
   }
 
   render() {
     return (
-      <div className="card-body mtg-title-row">
-        <div className="card-title float-left mtg-title align-bottom">{this.props.title}</div>
+      <div className="card-header mtg-title-row">
+        <div className="card-title mtg-title float-left">{this.card.Title}</div>
         <Cost cost={this.cost} />
       </div>
     )

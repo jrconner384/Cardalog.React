@@ -9,7 +9,7 @@ class AppContainer extends React.Component {
 
   render() {
     return (
-      <div class="app-container">
+      <div className="app-container">
         <Navbar />
         <Cards />
       </div>

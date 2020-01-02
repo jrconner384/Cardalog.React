@@ -28,7 +28,7 @@ class Cards extends React.Component {
     ));
 
     return (
-      <div className="container row">
+      <div className="container row justify-content-center">
         {cards}
       </div>
     );
